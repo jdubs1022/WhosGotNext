@@ -14,19 +14,25 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProfileComponent } from './components/profile/profile.component';
 
 import { ValidateService } from './services/validate.service';
+import { AuthService } from './services/auth.service';
 
 // Import BrowserAnimationsModule
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 // Import your library
 import { AlertModule } from 'ngx-alerts';
+import { AuthGuard } from './guards/auth.guard';
+import { GameComponent } from './components/game/game.component';
+import { SearchComponent } from './components/search/search.component';
 
 const appRoutes: Routes = [
   {path:'', component: HomeComponent},
   {path:'register', component: RegisterComponent},
   {path:'login', component: LoginComponent},
-  {path:'dashboard', component: DashboardComponent},
-  {path:'profile', component: ProfileComponent}
+  {path:'dashboard', component: DashboardComponent, canActivate:[AuthGuard]},
+  {path:'profile', component: ProfileComponent, canActivate:[AuthGuard]},
+  {path:'game', component: GameComponent, canActivate:[AuthGuard]},
+  {path:'search', component: SearchComponent, canActivate:[AuthGuard]}
 ]
 
 
@@ -38,7 +44,9 @@ const appRoutes: Routes = [
     RegisterComponent,
     HomeComponent,
     DashboardComponent,
-    ProfileComponent
+    ProfileComponent,
+    GameComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +56,7 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     AlertModule.forRoot({maxMessages: 5, timeout: 3000})
   ],
-  providers: [ValidateService],
+  providers: [ValidateService, AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
