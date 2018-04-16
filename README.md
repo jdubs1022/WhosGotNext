@@ -12,5 +12,5 @@ If you don't have angular cli downloaded you will have to do that.
 In the main folder (WhosGotNext) run: sudo npm install -g @angular/cli
 Here is a link to their github incase you have issues: https://github.com/angular/angular-cli#prerequisites
 
-Corey and Nazira you guys still need to accept the invatation for the Atlas account, I sent another one. This way you can put your IP address on it and gain access to it. 
+Corey and Nazira you guys still need to accept the invitation for the Atlas account, I sent another one. This way you can put your IP address on it and gain access to it. 
 If you have issues please reach out. 
