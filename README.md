@@ -3,7 +3,9 @@ Senior Design Project
 The login and register page work and it is connected to our atlas cluster.
 
 To run the app
--in the main folder (WhosGotNext) or whatever you name is, run: nodemon
+
+-in the main folder (WhosGotNext) or whatever you name is, run: npm install
+then run: nodemon
 
 To save changes
 -in the WhosGotNext/angular-src/ directory run: ng build
