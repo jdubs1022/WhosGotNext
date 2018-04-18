@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
@@ -50,11 +51,13 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    NgbCollapseModule,
     FormsModule,
     HttpModule,
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
     AlertModule.forRoot({maxMessages: 5, timeout: 3000})
+
   ],
   providers: [ValidateService, AuthService, AuthGuard],
   bootstrap: [AppComponent]
