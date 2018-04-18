@@ -1,6 +1,7 @@
 <div class="container-fluid">
   <div *ngIf="user">
     <h2 class="page-header">Welcome {{user.name}}</h2>
-
   </div>
+  <a [routerLink]="['/game']"><button class="btn btn-success pull-right">Start a Game!</button></a>
+  <a [routerLink]="['/search']"><button class="btn btn-success pull-right">Search for a Game!</button></a>
 </div>
