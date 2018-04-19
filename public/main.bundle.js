@@ -87,6 +87,7 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__guards_auth_guard__ = __webpack_require__("./src/app/guards/auth.guard.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_game_game_component__ = __webpack_require__("./src/app/components/game/game.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_search_search_component__ = __webpack_require__("./src/app/components/search/search.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_result_result_component__ = __webpack_require__("./src/app/components/result/result.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -115,6 +116,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var appRoutes = [
     { path: '', component: __WEBPACK_IMPORTED_MODULE_10__components_home_home_component__["a" /* HomeComponent */] },
     { path: 'register', component: __WEBPACK_IMPORTED_MODULE_9__components_register_register_component__["a" /* RegisterComponent */] },
@@ -138,7 +140,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_11__components_dashboard_dashboard_component__["a" /* DashboardComponent */],
                 __WEBPACK_IMPORTED_MODULE_12__components_profile_profile_component__["a" /* ProfileComponent */],
                 __WEBPACK_IMPORTED_MODULE_18__components_game_game_component__["a" /* GameComponent */],
-                __WEBPACK_IMPORTED_MODULE_19__components_search_search_component__["a" /* SearchComponent */]
+                __WEBPACK_IMPORTED_MODULE_19__components_search_search_component__["a" /* SearchComponent */],
+                __WEBPACK_IMPORTED_MODULE_20__components_result_result_component__["a" /* ResultComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -623,6 +626,56 @@ var RegisterComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_validate_service__["a" /* ValidateService */], __WEBPACK_IMPORTED_MODULE_3_ngx_alerts__["b" /* AlertService */], __WEBPACK_IMPORTED_MODULE_2__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */]])
     ], RegisterComponent);
     return RegisterComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/result/result.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/components/result/result.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  result works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/result/result.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ResultComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ResultComponent = /** @class */ (function () {
+    function ResultComponent() {
+    }
+    ResultComponent.prototype.ngOnInit = function () {
+    };
+    ResultComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-result',
+            template: __webpack_require__("./src/app/components/result/result.component.html"),
+            styles: [__webpack_require__("./src/app/components/result/result.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ResultComponent);
+    return ResultComponent;
 }());
 
 

@@ -25,6 +25,7 @@ import { AlertModule } from 'ngx-alerts';
 import { AuthGuard } from './guards/auth.guard';
 import { GameComponent } from './components/game/game.component';
 import { SearchComponent } from './components/search/search.component';
+import { ResultComponent } from './components/result/result.component';
 
 const appRoutes: Routes = [
   {path:'', component: HomeComponent},
@@ -47,7 +48,8 @@ const appRoutes: Routes = [
     DashboardComponent,
     ProfileComponent,
     GameComponent,
-    SearchComponent
+    SearchComponent,
+    ResultComponent
   ],
   imports: [
     BrowserModule,
