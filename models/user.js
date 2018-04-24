@@ -1,3 +1,5 @@
+// This file creates the mongoose database model for user
+
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const config = require('../config/database');
@@ -45,6 +47,7 @@ module.exports.addUser = function(newUser, callback){
   });
 }
 
+// Compare the passed-in "candidatePassword" with the "hash"
 module.exports.comparePassword = function(candidatePassword, hash, callback){
   bcrypt.compare(candidatePassword, hash, function(err, isMatch){
     if(err) throw err;

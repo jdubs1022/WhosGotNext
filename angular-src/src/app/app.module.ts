@@ -2,9 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
-
+import { GooglePlaceModule } from "ngx-google-places-autocomplete"; // Import Google-Places Module
+import { AgmCoreModule } from '@agm/core'; // Import Angular-Google Maps
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -23,18 +25,20 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 // Import your library
 import { AlertModule } from 'ngx-alerts';
 import { AuthGuard } from './guards/auth.guard';
-import { GameComponent } from './components/game/game.component';
+import { CreateComponent } from './components/create/create.component';
 import { SearchComponent } from './components/search/search.component';
 import { ResultComponent } from './components/result/result.component';
 
+// Any routes that need protecting have "canActivate[AuthGuard]"
 const appRoutes: Routes = [
   {path:'', component: HomeComponent},
   {path:'register', component: RegisterComponent},
   {path:'login', component: LoginComponent},
   {path:'dashboard', component: DashboardComponent, canActivate:[AuthGuard]},
   {path:'profile', component: ProfileComponent, canActivate:[AuthGuard]},
-  {path:'game', component: GameComponent, canActivate:[AuthGuard]},
-  {path:'search', component: SearchComponent, canActivate:[AuthGuard]}
+  {path:'create', component: CreateComponent, canActivate:[AuthGuard]},
+  {path:'search', component: SearchComponent, canActivate:[AuthGuard]},
+  {path:'result', component: ResultComponent, canActivate:[AuthGuard]}
 ]
 
 
@@ -47,7 +51,7 @@ const appRoutes: Routes = [
     HomeComponent,
     DashboardComponent,
     ProfileComponent,
-    GameComponent,
+    CreateComponent,
     SearchComponent,
     ResultComponent
   ],
@@ -55,10 +59,16 @@ const appRoutes: Routes = [
     BrowserModule,
     NgbCollapseModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule,
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
-    AlertModule.forRoot({maxMessages: 5, timeout: 3000})
+    AlertModule.forRoot({maxMessages: 5, timeout: 3000}),
+    GooglePlaceModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBqqOtWm-TTatvNnl585mt0V4dN0txIi0M',
+      libraries: ["places"]
+    })
 
   ],
   providers: [ValidateService, AuthService, AuthGuard],

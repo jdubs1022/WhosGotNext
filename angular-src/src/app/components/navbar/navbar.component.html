@@ -4,6 +4,10 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
+<!--
+The code snippet "[routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}""
+handles the highlighting of the elements in the navbar
+-->
   <div class="collapse navbar-collapse" id="navbarColor01" [ngbCollapse]="isCollapsed">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
@@ -23,6 +27,12 @@
       </li>
       <li class="nav-item" *ngIf="!authService.loggedIn()"  [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
         <a class="nav-link" [routerLink]="['/register']" (click)="isCollapsed = true">Register</a>
+      </li>
+      <li class="nav-item" *ngIf="authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <a class="nav-link" [routerLink]="['/create']" (click)="isCollapsed = true">Create</a>
+      </li>
+      <li class="nav-item" *ngIf="authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <a class="nav-link" [routerLink]="['/search']" (click)="isCollapsed = true">Search</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" *ngIf="authService.loggedIn()" (click)="isCollapsed = true" (click)="onLogoutClick()" href='#'>Logout</a>

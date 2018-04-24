@@ -1,0 +1,2 @@
+Everything outside of the "angular-src" folder is backend!
+Everything inside of the "angular-src" folder is frontend!

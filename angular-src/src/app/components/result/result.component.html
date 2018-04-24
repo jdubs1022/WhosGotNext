@@ -1,3 +1,21 @@
-<p>
-  result works!
-</p>
+<div class="container-fluid">
+
+  <h1>{{ title }}</h1>
+
+  <!-- this creates a google map on the page with the given lat/lng from -->
+  <!-- the component as the initial center of the map: ../../../../../images/sports_icons/baseball.png-->
+  <div class="form-group">
+    <input placeholder="search for location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="form-control" #search [formControl]="searchControl">
+  </div>
+  <agm-map [latitude]="latitude" [longitude]="longitude" [scrollwheel]="false" [zoom]="zoom">
+    <agm-marker [iconUrl]="icon" [latitude]="latitude" [longitude]="longitude" ></agm-marker>
+    <agm-marker [iconUrl]="icon1" [latitude]="latitude1" [longitude]="longitude1" ></agm-marker>
+  </agm-map>
+
+  <div *ngIf="!userLocation" class="">
+    <p>NOOOO</p>
+  </div>
+
+
+
+</div>

@@ -8,6 +8,7 @@ import { AlertService } from 'ngx-alerts';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
+
 export class LoginComponent implements OnInit {
   username: String;
   password: String;

@@ -1,0 +1,60 @@
+<div class="container-fluid">
+  <h2 class="page-header">Create A New Game</h2>
+
+  <form (submit)="onCreateSubmit()">
+    <!-- "[(ngModel)]=" allows for access to data in each of the inputs -->
+    <!-- These pertain to the fields set in the "create.component.ts" file -->
+    <div class="form-group">
+      <label>Title</label>
+      <input type="text" [(ngModel)]="title" name="title" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+      <label>Sport</label>
+      <select [(ngModel)]="sport" name="sport" class="form-control" required>
+        <option value="" [ngValue]="undefined" disabled selected>---Please select---</option>
+        <option value="BASEBALL">Baseball</option>
+        <option value="BASKETBALL">Basketball</option>
+        <option value="FOOTBALL">Football</option>
+        <option value="HANDBALL">Handball</option>
+        <option value="SOCCER">Soccer</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Date</label>
+      <input id="datefield" type="date" [(ngModel)]="date" name="date" class="form-control"
+      placeholder="yyyy-MM-dd" min="{{todate | date:'yyyy-MM-dd'}}" required>
+    </div>
+
+    <div class="form-group">
+      <label>Start Time</label>
+      <input type="time" [(ngModel)]="startTime" name="startTime" class="form-control"
+      placeholder="HH:mm:ss" required>
+    </div>
+
+    <div class="form-group">
+      <label>Duration</label>
+      <input type="number" [(ngModel)]="duration" name="duration" class="form-control"
+      min="1" max="8" placeholder="Please enter of the number of hours!" required>
+    </div>
+
+    <div class="form-group">
+      <label>Location</label>
+      <input type="text" placeholder="Enter a Location" name="location" class="form-control"
+      autocorrect="off" autocapitalize="off" spellcheck="off" #search [formControl]="searchControl" required >
+    </div>
+
+    <div style="display: none;" class="form-group">
+      <label>Latitude</label>
+      <input type="number" value="latH" name="latitude" class="form-control" required >
+    </div>
+
+    <div style="display: none;" class="form-group">
+      <label>Longitude</label>
+      <input type="number" value="longH" name="longitude" class="form-control" required >
+    </div>
+
+    <input type="submit" class="btn btn-primary" value="Submit">
+  </form>
+</div>

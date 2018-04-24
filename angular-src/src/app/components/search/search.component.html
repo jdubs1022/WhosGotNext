@@ -1,3 +1,44 @@
-<p>
-  search works!
-</p>
+<div class="container-fluid">
+  <h2 class="page-header">Search for A Game</h2>
+
+  <form (submit)="onSearchSubmit()">
+
+    <div class="form-group">
+      <label>Sport</label>
+      <select [(ngModel)]="sport" name="sport" class="form-control" required>
+        <option value="" [ngValue]="undefined" disabled selected>---Please select---</option>
+        <option value="BASEBALL">Baseball</option>
+        <option value="BASKETBALL">Basketball</option>
+        <option value="FOOTBALL">Football</option>
+        <option value="HANDBALL">Handball</option>
+        <option value="SOCCER">Soccer</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Date</label>
+      <input id="datefield" type="date" [(ngModel)]="date" name="date" class="form-control"
+      placeholder="yyyy-MM-dd" min="{{todate | date:'yyyy-MM-dd'}}" required>
+    </div>
+
+    <div class="form-group">
+      <label>Location</label>
+      <input type="text" placeholder="Enter the location from which you will travel!" name="location" class="form-control"
+      autocorrect="off" autocapitalize="off" spellcheck="off" #search [formControl]="searchControl" required >
+    </div>
+
+    <div style="display: none;" class="form-group">
+      <label>Latitude</label>
+      <input type="number" value="latH" name="latitude" class="form-control" required >
+    </div>
+
+    <div style="display: none;" class="form-group">
+      <label>Longitude</label>
+      <input type="number" value="longH" name="longitude" class="form-control" required >
+    </div>
+
+    <input type="submit" class="btn btn-primary" value="Submit">
+
+  </form>
+
+</div>
