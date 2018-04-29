@@ -8,6 +8,8 @@ const cors = require('cors');
 const passport = require('passport');
 const mongoose = require('mongoose');
 const config = require('./config/database');
+const geocoding = new require('reverse-geocoding');
+
 
 // Connect to database
 mongoose.connect(config.database);
@@ -33,7 +35,7 @@ const users = require('./routes/users');
 const games = require('./routes/games');
 
 // Port number
-const port = 5000
+const port = 5000;
 
 // CORS Middleware
 // cors will allow us to make a request to our api from a different domain name

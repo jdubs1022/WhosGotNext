@@ -1,7 +1,7 @@
 // This file handles all the routes associated with the Games
 
 const express = require('express');
-const router = express. Router();
+const router = express.Router();
 const jwt = require('jsonwebtoken');
 const passport = require("passport");
 
@@ -14,6 +14,12 @@ const Game = require("../models/game");
 // Create - Creates a new Game
 router.post("/create", passport.authenticate('jwt', {session:false}), function (req, res, next) {
 
+  // Get Date and Time information
+  let hours = Number(req.body.duration);
+  let startDate = new Date(req.body.date + 'T' + req.body.startTime + ":00");
+  let endDate = new Date(req.body.date + 'T' + req.body.startTime + ":00");
+  endDate.setHours(endDate.getHours() + hours);
+
   // Below We Define a new Game
   let newGame = new Game({
 
@@ -23,13 +29,16 @@ router.post("/create", passport.authenticate('jwt', {session:false}), function (
     playernum: 1,
     players: [req.user.username],
     date: new Date(req.body.date),
-    duration: req.body.duration,
+    duration: hours,
     startTime: req.body.startTime,
-    dateTime: new Date(req.body.date + 'T' + req.body.startTime + ":00"),
+    startDateTime: startDate,
+    endDateTime: endDate,
     latitude: req.body.latitude,
-    longitude: req.body.longitude
+    longitude: req.body.longitude,
+    address: req.body.address
 
   });
+
 
   // Then we add the new game to the Game collection of the database
   Game.addGame(newGame, function(err, game) {
@@ -37,6 +46,14 @@ router.post("/create", passport.authenticate('jwt', {session:false}), function (
       console.log(err);
       res.json({success: false, msg: "Failed to create game"});
     } else {
+      console.log("DURATION: ");
+      console.log(hours);
+      console.log("START - WHAAAAAAAAAAAAAAAT!!!");
+      console.log(startDate.toLocaleDateString());
+      console.log(startDate.toLocaleTimeString("en-US"));
+      console.log("END - WHAAAAAAAAAAAAAAAT!!!");
+      console.log(endDate.toLocaleDateString());
+      console.log(endDate.toLocaleTimeString("en-US"));
       res.json({success: true, msg: "Game Created"});
     }
   });
@@ -72,7 +89,6 @@ router.post("/search", passport.authenticate('jwt', {session:false}), function (
       if (err) throw err;
 
       let gLength = games.length;
-
       // Lines below alert the user if no game is not found
       if (gLength == 0) {
         return res.json({success: false, msg: 'No Game matches entered parameters'});
@@ -97,8 +113,6 @@ router.post("/search", passport.authenticate('jwt', {session:false}), function (
       if (gLength == 0) {
         return res.json({success: false, msg: 'No Game matches entered sport parameter'});
       } else {
-        console.log(gLength);
-        console.log(games[1]);
         return res.json({
           success: true,
           msg: (gLength == 1) ? 'A match was found' : `${gLength} matches were found`,
@@ -139,6 +153,75 @@ router.get("/result", passport.authenticate('jwt', {session:false}), function(re
   res.json({games: req.games, userLocation: req.userLocation});
 });
 
-//
+// Add new player to the players array of the chosen game /:gameID/:username
+// ?gameID=5ae38b830496db40a8d05947&username=TrayTray
+router.put("/add", passport.authenticate('jwt', {session:false}), function(req, res, next) {
+
+  // Declare needed variables
+  let username = "TralTral"; //req.params.username;
+  let gameID = "5ae5144c52e5e403cc4c8c61"; //req.params.gameID;
+  let players = [];
+
+  if (!username) {
+    return res.json({ success: false, msg: "No username assigned!" });
+  }
+
+  // Find the specific game that is to be joined
+  Game.getGameByID(gameID, function(err, foundGame){
+
+    if (err) throw err;
+
+    // Lines below check to make sure that the game actually exits
+    if (foundGame) {
+      players = foundGame.players;
+    } else {
+      return res.json({ success: false, msg: "The game does not exist!" });
+    }
+
+    // Check to make sure that user is not already in game
+    if (players.indexOf(username) != -1){
+      return res.json({success: false, msg: "You are already in this game"});
+    }
+
+    // Add player to the correct game
+    Game.addPlayerToGame(gameID, username, function(err, game){
+
+      if (err) throw err;
+
+      console.log("The players array has been updated!");
+      console.log(game);
+    });
+
+    // Add player to the correct game
+    Game.incrementPlayerNum(gameID, function(err, game){
+
+      if (err) throw err;
+
+      console.log("The playernum has been incremented!");
+      console.log(game);
+
+    });
+
+    // Return that the adding of the player to the game was successfull!
+    return res.json({success: true, msg: "You have now been added to the game!"});
+
+  });
+
+});
+
+
+// Remove All Games from document
+router.delete("/deleteAll", passport.authenticate('jwt', {session:false}), function(req, res, next){
+  Game.deleteAllGames( function( err ){
+    if (err) {
+      console.log(err);
+      res.json({success: false, msg: "Games were not deleted"});
+      throw err;
+    } else {
+      console.log("Every Game has been deleted!");
+      res.json({success: true, msg: "Every Game has been deleted!"});
+    }
+  });
+});
 
 module.exports = router;

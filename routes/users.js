@@ -7,7 +7,7 @@ const jwt = require('jsonwebtoken');
 const config = require('../config/database');
 
 // Brings in the User model
-const User = require('../models/user')
+const User = require('../models/user');
 
 // Register - Creates a new user
 router.post('/register', function(req, res, next){
@@ -76,7 +76,7 @@ router.post('/authenticate', function(req, res, next){
         // This else executes if the password entered by the user does not match
         return res.json({success: false, msg: 'Wrong password'});
       }
-    })
+    });
 
   });
 });

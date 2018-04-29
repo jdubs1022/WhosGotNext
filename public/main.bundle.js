@@ -7,6 +7,34 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAlCAYAAAAj
 
 /***/ }),
 
+/***/ "../images/sports_icons/basketbal.png":
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAlCAYAAAAjt+tHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADmklEQVRYhbWXP4/jVBTFf/F4Bys4g2JmERqkaCTqFUIUaCFl5iOgiI5i00TabUd8AIqIgmJRKEKBEE2KrSiTMjCiWCH4BCsjjUYwepESY7xZj0ORd81zJh47Q+ZKT/6TZ5+Tc899z7eyXC4BODk5sQEL2NdHm91GDCTAAkhGo1EMUFkulwK+Dzh67GsC1o7AE01gAUR6LEajUVxptVoCXgUO9NHhbhSIgBCY6eNC/qWjwd/qHY7PdgycidPL1kN9mgCxKX21dzg+Oz6+T7X6Go6zv1PgKFoQhi/pMT47vWw9QKfBNJ4D3Ak4sP5O8ZklbpdxJ+AbSKSYYrSduF0pRRAE2LZNHMe4rovneXnTrZ0BSwRBQL3d5+irf6i3+wRBUPjMTgnYtk2t2QGg1uxg28WV/L8JKKXwfZ/z83PiOGY+GQAwnwyI47jw+VsvNkopwjAkSRLq7T61Zof5ZMB02GU67ALgum7he26lgJjtjU++5p0v/sjI3nj6inq7D6w8oZTaHQGRW8xWa3bYO3g7M+dqdpEhEgQBvu/nEimdAt/3AVLgjXMe30vPZV6t2SH65Tv+/KGzsSRLKSDsG09f5YJLNBoNXNdlOuziP77HfDLA+fCzXD+UToHk1Yz5ZJCCSIhSJhH1eT13TShFIIqia8ASlUolPV/PuxDxPI9Go3E7AkqpTD1LqZlhyi0GbDz6/qZlOI1cE0qpQdZ46+B7e3scHR2hlMqsARIF+8FmBQT8zU+/SY13NbtIXW76wXEcgIzM9XY/k46b4poCZrm9/tGjNN/TYfdaCU6H3WvuXt8P5s+ebEcAVmYC+Pvnb1NJ5d7V7ILw9x/T++vyyn4gS3PRfpDrAZHbdd1URjGgZVm5uZXSmz97kn4TbE/gy3cB0pwGQZDWcpGpPM8r5f51AoncEFCzbuV8mxeXiARWVRAbgyha7BIkE8a7U0yL/9qlCCAMX94JCfksl0uNmdgGeHh62XrYY3Njcnx8H8+rlQJTas6LF39t/E03JiFGX5Doi5me8IBsa2YB9Bj/BBSSEPDTy9bH+pb4a701i4CkTHOafsP3DsfPb1LCAP+ArLfym9OC9lyOZvv26yYSBvj7psRrBDa35zeFJuYArh7V3uH4N5OEAf6eBg/0iAQoLwoJ5JBwRQnA/OcBW4CXJrCBxIEm8RyQnAeszFUafCsCaySqeki3uWAlfbgN+NYEDBJiSilVKbHFNuAA/wJGhhD7RgUe3QAAAABJRU5ErkJggg=="
+
+/***/ }),
+
+/***/ "../images/sports_icons/handball.png":
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAlCAYAAAAjt+tHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADgUlEQVRYhbWXz2sbRxTHP95K9qKMA9oquRSE/4GQtD2UtD7Kx0J6CCa3HupDBb7WBHLLIQgKPRhcaC49FFqdesol0imkmB5C4v/ACEMOFSOIh2Ujq6sePDOZXe9KI1d+MMzO/pjPd957M9JbmU6nAGxtbVWAAFjVfYXl2gRIgTGQ9nq9CcDKdDo18FUg1G1VCwiWBE+1gDGQ6Dbu9XqTlVarZeA14LruQ67GAwkQA+90PzarDDX8ZqfRP1wyOGN7w9ZdfZkCE9f1tU6jf7ixcYNabY0wXF0qOEnGxPF7OvQP94atW+gwuIkXAlcCB/JzmjwLKpzH2rRLwYfDIUEQkKYpQRAQRdE8EZZpsvzS2S6lJI5j1u7/wtrXP6KUQkrp82lglPxvq28fcO2z+3Z89uwH72+Xtc8vbQt7QEqJUip7s9u2l6NuGyHE1Qgw8I8f/My1L7/LPBvsVqlUKgghSpOwyLxDkIefvnyaeV7fPmAymXiDjXl5IA8f7FYBWN/cse+Y61G3fSFEs7wyV0AZvLl/lnnv9OVT1jd3MqIAOPodnj8qnX+ugCiKqN37ifCLb5EP64VwI8rYyElKY81m83ICpJSo33ao/PF9YYwNXAhh978QAqWUFZoXuJAAEzulFPXtg4supnh1F7ZqiXntgjiOM/D8DhgMBoXH72C3OnP1MMMD+QOnducbCx9124y6bZr7ZzT3z+w9pZT1RlnM81bogZOTE7tqA/lINCzInHSD3arNfhNvzx8ia4UeSNOUT568BeBfNSR+86fNbLOnoyhCSmnvr2/uUN8+sGPf07A0BO6KgyAoPEzM2BXhjn1ElApI/v7VunvWRK4IcxBVq1XCF4/nwksFCCEIXzz2/mGJogilVCbjfb81AtL8hG7vY75Z71gK57tg4jSSZLzoRN7mzG2ZAR/KpQQgjt9fiQjzt9wMNTOtOPB4b9i626G4MNnYuEEUrXvBpDzl+Pifwme6MIlx6oJUD97pF26RLc0CgA79v4C5Igx8b9j6St8y+ZUvzRIg9SlO7X/4TqP/apYnHPjnZHOrvDidU56b3i3fXheJcOCfui7OCSguz2eZFhYCQrdap9E/ckU48NsarnRLDKjM5gooESGMJwB35YoF4N4CCkRc1yJeASbmivPk8oYvJCAnoqabqTbHnLs+XgS+sABHhElKs1XNFhsvAgf4DzBM4K/K8WWpAAAAAElFTkSuQmCC"
+
+/***/ }),
+
+/***/ "../images/sports_icons/soccer.png":
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAlCAYAAAAjt+tHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADz0lEQVRYhcWXz2vbZhjHP9EkRzaOR4VTmkJF7msZ6w6lbY7OqbuXQm8jDAJmMFjyJwz3skOgl5wGveSyXZbL7GNK6CEdg46dCq0aaEmDMmJhK5KQd9D7KpIt2ZZx2QMPsn75+9HzPO8jPQuDwQCA9fV1FVCAktiqzNcCIAQ8IGy32wHAwmAwkOIlQBdeEgDKnMRDAeABrnCv3W4HC41GQ4pXgJrY6nyaCLhADzgXW08+pS7Er7bqncM5C6ds+7RxV/wMgSAZ+kqr3jlcXV2mUllE10tzFXZdj17vghadw+3Txi1EGpKFpwOfRBwY/k9ZZ4pKlGvpE8Vt207tG4YxC0SsKQttqmq3bRvHcbjy8CkAZ3ubhSESpkiSQnbl4VOW1jbifX9/axbxNMX/abkRkLl2XTd13BFhhygFqqpyfHyMoijoug4US0kmgGVZQBRubejc2d5mnHuA+g/PuXh7lDpfBCITwDRN+PF15g3J/Esr3bg9Auk4TvQ/swBYlgXN4We/tGtbL0ZEuwe7LK1txG41NWzbnhiJzCI0TTPXNU3jw5M7uK8PUvec7W1iNTW6B7tAlD7HccaK5wKMs5WVFRYXF/Hf/5N5XtaATJWsp7kBAGialipEAHPHj39bIn3mjj+xDubaB65tvUhBWE1t/hHo9/upduy9exk/cenGbZa/+23kHsuyckEKt+J+v4/+xYM4xx+e3IlEmhrmjk/55jepdMQQOauqMICiKJRvPohgXv0ORKvGsiysphZHIPT60bb3b2bvmBkgDEO8V/ssrW3w2efX4+OmaXJyckL3l0d4nhfDBkEw9oVVGKBcLvPx7328dy/jZiRf06qqEgQB1Wp1pAHlNaTCRVgul1EUJdX/ZVFe/7k/dQOaGcC2bcIwTB1TVTXOc/Xet2hafhvPAwjHXpUwwzC4+ng3VVhBENA92GUQhpz/8RO+P7oKMiyEqAaChOO63tjvQtu2cZ5twLNLgGq1Gr0Bf/0e3/ep1WqZ97quFzNLV7kcl1yAXu8CyP84NQwjs6AmvfXkZ7ncFZqhmhDvbZ827rbIHkxWV5cxjKWxItJsu8ubNx8zz4nBpEdiLgjFzrm44Bbp0UwBaNF5DkyEkOLbp4374pCsr+HRzAXCaYbT+Bu+Ve8cjYtEQvxr0rWVP5xOGM/lNjm+/ZkFkRD/KhniIYDs8XycCTAdqAqvtOqdv5IQCfEvhbgj3JVCeTYRIAeiKiMBJJ/coYD41AAZEDUBcQTInDtExTW1eCGAIYiKcNksPKLQ94qIFwZIQMiilEtVLjGviDjAf8ME3CUol71qAAAAAElFTkSuQmCC"
+
+/***/ }),
+
+/***/ "../images/sports_icons/usfootball.png":
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAlCAYAAAAjt+tHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEHElEQVRYhbWXTWgjVRzAf/OVTCbZNm3Tr62u9eugS1eqeCiCLpKCioiwF8GDevQgeBDKgidvAQ9787igiCB4WC8uJKwnLYjrsoKC4NpVEZtutgn5mEzm08POq9Nkkk62zR8eLx8z7/d77/3fJH8pCAIANjc3VUAGUmGvcrLhAj5gA365XHYBpCAIBDwF6GFLhQLyCcH9UMAGrLDZ5XLZlYrFooAbwFTY60xmBSzABJphb4tZ6iF8oVSobJ8w+FBs1Yob4UsfcKNLb5QKle3V1XkMI42up04UbFk2ptmjRGV7q1ZcI9yGaOLpwETgQP+YIs9kke2iTQQeI3HAFFl+Utk+TsjHAtu2jed5B/39RqKj5jgOnU4H0zTxPA/x8NKWz+K1dvE7uwAoioKmaRiGQTabRZKk4wl4nofrulSrVdTCo2RfeIfME5vIp5ZQ86cPXWv//RNeaw/zxlfs//gFjUaDxcVFVFUdKTJUoF6vo+s6HU8j9dCzLH3w/ciZpB58GoDMky+Rf71E9dJ5unYNzXWRZZl0Oh17X2wONBoNWq0WwfmL+MvryLmFkfD+ULKzqHOPYBXO4S+eY29vD8dxkgk4jkOz2WT61Y8wnn9vLPBAqDqZt75EKTxGvV5PJmCaJur840xtbh0PLgD6FDMXPsayLHzfP1rAcRyM9QtI8uDuVC+9mKjvj8zZV5BS2djjOkDxfR8l/8DQGTU+eXlkP0xCmT6NHDOpgU8URcG9+8dQgfy734zsF9+/NnBP4Nq49b+SbYGmaXS2L+P32gMXi8GP6vujvX0Z3B6qOnjqBwSy2SxBt8HdT9+OHWzccP79hcbXF8nlcrEPpNgtmJubo/vzFdqfvQm+e//07j7O52+gehb5fD72ktgnoWEYFAoFpJ1vSbk+ppLHa+6iTC0l4/56FfvPH5hJ+yiqysLCQmwCDhUQEkEQoLou7eoO/3x4hszaa6Qf3kDOFUitrKHMnMFr7uK39nDu3MKt/U735hXc2i10XUefnkNRlJGyI3+MJElC0zRWVlbodrv0dq7R/e0qjuMcymhZlpEkiXQ6TS6VIrO8jKZpI8GJBKIihmFgGEaiQccJsTGDB3Ty4QsBN9KwLHtixMjYB0yZ/8slC8A0exOREH/LxduQ6asRuLlVK26UiC9MVlfnmZ09lQi2v9/i9u07sd+FhYlJpC7wwzfN8II1DpdmMkCJynfAkRICvlUrPhd+JPKrvzSzAD9JcXrwH75UqFwftRIR+DMczq3hxekR5bnoo+XbjTiJCHw9usR9AvHl+agIxXQgFzajVKjcjEpE4E+F8HbYLAEaFkcKDJHIiZUAojNvMwY8sUCMxFQocR0Qe97mXnIlho8l0CdhhE1Umzb3lt4cBz62QERCJKU4quKI2ePAAf4D1k72A0ovn7IAAAAASUVORK5CYII="
+
+/***/ }),
+
 /***/ "./src/$$_lazy_route_resource lazy recursive":
 /***/ (function(module, exports) {
 
@@ -86,21 +114,23 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ngx_google_places_autocomplete__ = __webpack_require__("./node_modules/ngx-google-places-autocomplete/bundles/ngx-google-places-autocomplete.umd.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ngx_google_places_autocomplete___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_ngx_google_places_autocomplete__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__agm_core__ = __webpack_require__("./node_modules/@agm/core/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__("./src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_navbar_navbar_component__ = __webpack_require__("./src/app/components/navbar/navbar.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_login_login_component__ = __webpack_require__("./src/app/components/login/login.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_register_register_component__ = __webpack_require__("./src/app/components/register/register.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_home_home_component__ = __webpack_require__("./src/app/components/home/home.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_dashboard_dashboard_component__ = __webpack_require__("./src/app/components/dashboard/dashboard.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_profile_profile_component__ = __webpack_require__("./src/app/components/profile/profile.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__services_validate_service__ = __webpack_require__("./src/app/services/validate.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__services_auth_service__ = __webpack_require__("./src/app/services/auth.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__angular_platform_browser_animations__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/animations.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_ngx_alerts__ = __webpack_require__("./node_modules/ngx-alerts/ngx-alerts.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__guards_auth_guard__ = __webpack_require__("./src/app/guards/auth.guard.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_create_create_component__ = __webpack_require__("./src/app/components/create/create.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_search_search_component__ = __webpack_require__("./src/app/components/search/search.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_result_result_component__ = __webpack_require__("./src/app/components/result/result.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_agm_direction__ = __webpack_require__("./node_modules/agm-direction/agm-direction.umd.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_agm_direction___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_agm_direction__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_component__ = __webpack_require__("./src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_navbar_navbar_component__ = __webpack_require__("./src/app/components/navbar/navbar.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_login_login_component__ = __webpack_require__("./src/app/components/login/login.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_register_register_component__ = __webpack_require__("./src/app/components/register/register.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_home_home_component__ = __webpack_require__("./src/app/components/home/home.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_dashboard_dashboard_component__ = __webpack_require__("./src/app/components/dashboard/dashboard.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_profile_profile_component__ = __webpack_require__("./src/app/components/profile/profile.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__services_validate_service__ = __webpack_require__("./src/app/services/validate.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__services_auth_service__ = __webpack_require__("./src/app/services/auth.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__angular_platform_browser_animations__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/animations.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_ngx_alerts__ = __webpack_require__("./node_modules/ngx-alerts/ngx-alerts.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__guards_auth_guard__ = __webpack_require__("./src/app/guards/auth.guard.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_create_create_component__ = __webpack_require__("./src/app/components/create/create.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_search_search_component__ = __webpack_require__("./src/app/components/search/search.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_result_result_component__ = __webpack_require__("./src/app/components/result/result.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -116,6 +146,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
  // Import Google-Places Module
  // Import Angular-Google Maps
+ // Import Angular-Google-Maps Directions Moudle
 
 
 
@@ -135,14 +166,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 // Any routes that need protecting have "canActivate[AuthGuard]"
 var appRoutes = [
-    { path: '', component: __WEBPACK_IMPORTED_MODULE_12__components_home_home_component__["a" /* HomeComponent */] },
-    { path: 'register', component: __WEBPACK_IMPORTED_MODULE_11__components_register_register_component__["a" /* RegisterComponent */] },
-    { path: 'login', component: __WEBPACK_IMPORTED_MODULE_10__components_login_login_component__["a" /* LoginComponent */] },
-    { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_13__components_dashboard_dashboard_component__["a" /* DashboardComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_19__guards_auth_guard__["a" /* AuthGuard */]] },
-    { path: 'profile', component: __WEBPACK_IMPORTED_MODULE_14__components_profile_profile_component__["a" /* ProfileComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_19__guards_auth_guard__["a" /* AuthGuard */]] },
-    { path: 'create', component: __WEBPACK_IMPORTED_MODULE_20__components_create_create_component__["a" /* CreateComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_19__guards_auth_guard__["a" /* AuthGuard */]] },
-    { path: 'search', component: __WEBPACK_IMPORTED_MODULE_21__components_search_search_component__["a" /* SearchComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_19__guards_auth_guard__["a" /* AuthGuard */]] },
-    { path: 'result', component: __WEBPACK_IMPORTED_MODULE_22__components_result_result_component__["a" /* ResultComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_19__guards_auth_guard__["a" /* AuthGuard */]] }
+    { path: '', component: __WEBPACK_IMPORTED_MODULE_13__components_home_home_component__["a" /* HomeComponent */] },
+    { path: 'register', component: __WEBPACK_IMPORTED_MODULE_12__components_register_register_component__["a" /* RegisterComponent */] },
+    { path: 'login', component: __WEBPACK_IMPORTED_MODULE_11__components_login_login_component__["a" /* LoginComponent */] },
+    { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_14__components_dashboard_dashboard_component__["a" /* DashboardComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_20__guards_auth_guard__["a" /* AuthGuard */]] },
+    { path: 'profile', component: __WEBPACK_IMPORTED_MODULE_15__components_profile_profile_component__["a" /* ProfileComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_20__guards_auth_guard__["a" /* AuthGuard */]] },
+    { path: 'create', component: __WEBPACK_IMPORTED_MODULE_21__components_create_create_component__["a" /* CreateComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_20__guards_auth_guard__["a" /* AuthGuard */]] },
+    { path: 'search', component: __WEBPACK_IMPORTED_MODULE_22__components_search_search_component__["a" /* SearchComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_20__guards_auth_guard__["a" /* AuthGuard */]] },
+    { path: 'result', component: __WEBPACK_IMPORTED_MODULE_23__components_result_result_component__["a" /* ResultComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_20__guards_auth_guard__["a" /* AuthGuard */]] }
 ];
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -150,16 +181,16 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__components_navbar_navbar_component__["a" /* NavbarComponent */],
-                __WEBPACK_IMPORTED_MODULE_10__components_login_login_component__["a" /* LoginComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__components_register_register_component__["a" /* RegisterComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__components_home_home_component__["a" /* HomeComponent */],
-                __WEBPACK_IMPORTED_MODULE_13__components_dashboard_dashboard_component__["a" /* DashboardComponent */],
-                __WEBPACK_IMPORTED_MODULE_14__components_profile_profile_component__["a" /* ProfileComponent */],
-                __WEBPACK_IMPORTED_MODULE_20__components_create_create_component__["a" /* CreateComponent */],
-                __WEBPACK_IMPORTED_MODULE_21__components_search_search_component__["a" /* SearchComponent */],
-                __WEBPACK_IMPORTED_MODULE_22__components_result_result_component__["a" /* ResultComponent */]
+                __WEBPACK_IMPORTED_MODULE_9__app_component__["a" /* AppComponent */],
+                __WEBPACK_IMPORTED_MODULE_10__components_navbar_navbar_component__["a" /* NavbarComponent */],
+                __WEBPACK_IMPORTED_MODULE_11__components_login_login_component__["a" /* LoginComponent */],
+                __WEBPACK_IMPORTED_MODULE_12__components_register_register_component__["a" /* RegisterComponent */],
+                __WEBPACK_IMPORTED_MODULE_13__components_home_home_component__["a" /* HomeComponent */],
+                __WEBPACK_IMPORTED_MODULE_14__components_dashboard_dashboard_component__["a" /* DashboardComponent */],
+                __WEBPACK_IMPORTED_MODULE_15__components_profile_profile_component__["a" /* ProfileComponent */],
+                __WEBPACK_IMPORTED_MODULE_21__components_create_create_component__["a" /* CreateComponent */],
+                __WEBPACK_IMPORTED_MODULE_22__components_search_search_component__["a" /* SearchComponent */],
+                __WEBPACK_IMPORTED_MODULE_23__components_result_result_component__["a" /* ResultComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -168,16 +199,17 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_3__angular_forms__["e" /* ReactiveFormsModule */],
                 __WEBPACK_IMPORTED_MODULE_4__angular_http__["HttpModule"],
                 __WEBPACK_IMPORTED_MODULE_5__angular_router__["b" /* RouterModule */].forRoot(appRoutes),
-                __WEBPACK_IMPORTED_MODULE_17__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
-                __WEBPACK_IMPORTED_MODULE_18_ngx_alerts__["a" /* AlertModule */].forRoot({ maxMessages: 5, timeout: 3000 }),
+                __WEBPACK_IMPORTED_MODULE_18__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
+                __WEBPACK_IMPORTED_MODULE_19_ngx_alerts__["a" /* AlertModule */].forRoot({ maxMessages: 5, timeout: 3000 }),
                 __WEBPACK_IMPORTED_MODULE_6_ngx_google_places_autocomplete__["GooglePlaceModule"],
-                __WEBPACK_IMPORTED_MODULE_7__agm_core__["a" /* AgmCoreModule */].forRoot({
+                __WEBPACK_IMPORTED_MODULE_7__agm_core__["AgmCoreModule"].forRoot({
                     apiKey: 'AIzaSyBqqOtWm-TTatvNnl585mt0V4dN0txIi0M',
                     libraries: ["places"]
-                })
+                }),
+                __WEBPACK_IMPORTED_MODULE_8_agm_direction__["AgmDirectionModule"]
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_15__services_validate_service__["a" /* ValidateService */], __WEBPACK_IMPORTED_MODULE_16__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_19__guards_auth_guard__["a" /* AuthGuard */]],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */]]
+            providers: [__WEBPACK_IMPORTED_MODULE_16__services_validate_service__["a" /* ValidateService */], __WEBPACK_IMPORTED_MODULE_17__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_20__guards_auth_guard__["a" /* AuthGuard */]],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_9__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
     return AppModule;
@@ -197,7 +229,7 @@ module.exports = ""
 /***/ "./src/app/components/create/create.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\r\n  <h2 class=\"page-header\">Create A New Game</h2>\r\n\r\n  <form (submit)=\"onCreateSubmit()\">\r\n    <!-- \"[(ngModel)]=\" allows for access to data in each of the inputs -->\r\n    <!-- These pertain to the fields set in the \"create.component.ts\" file -->\r\n    <div class=\"form-group\">\r\n      <label>Title</label>\r\n      <input type=\"text\" [(ngModel)]=\"title\" name=\"title\" class=\"form-control\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label>Sport</label>\r\n      <select [(ngModel)]=\"sport\" name=\"sport\" class=\"form-control\" required>\r\n        <option value=\"\" [ngValue]=\"undefined\" disabled selected>---Please select---</option>\r\n        <option value=\"BASEBALL\">Baseball</option>\r\n        <option value=\"BASKETBALL\">Basketball</option>\r\n        <option value=\"FOOTBALL\">Football</option>\r\n        <option value=\"HANDBALL\">Handball</option>\r\n        <option value=\"SOCCER\">Soccer</option>\r\n      </select>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label>Date</label>\r\n      <input id=\"datefield\" type=\"date\" [(ngModel)]=\"date\" name=\"date\" class=\"form-control\"\r\n      placeholder=\"yyyy-MM-dd\" min=\"{{todate | date:'yyyy-MM-dd'}}\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label>Start Time</label>\r\n      <input type=\"time\" [(ngModel)]=\"startTime\" name=\"startTime\" class=\"form-control\"\r\n      placeholder=\"HH:mm:ss\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label>Duration</label>\r\n      <input type=\"number\" [(ngModel)]=\"duration\" name=\"duration\" class=\"form-control\"\r\n      min=\"1\" max=\"8\" placeholder=\"Please enter of the number of hours!\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label>Location</label>\r\n      <input type=\"text\" placeholder=\"Enter a Location\" name=\"location\" class=\"form-control\"\r\n      autocorrect=\"off\" autocapitalize=\"off\" spellcheck=\"off\" #search [formControl]=\"searchControl\" required >\r\n    </div>\r\n\r\n    <div style=\"display: none;\" class=\"form-group\">\r\n      <label>Latitude</label>\r\n      <input type=\"number\" value=\"latH\" name=\"latitude\" class=\"form-control\" required >\r\n    </div>\r\n\r\n    <div style=\"display: none;\" class=\"form-group\">\r\n      <label>Longitude</label>\r\n      <input type=\"number\" value=\"longH\" name=\"longitude\" class=\"form-control\" required >\r\n    </div>\r\n\r\n    <input type=\"submit\" class=\"btn btn-primary\" value=\"Submit\">\r\n  </form>\r\n</div>\r\n"
+module.exports = "<div class=\"container-fluid\">\r\n  <h2 class=\"page-header\">Create A New Game</h2>\r\n\r\n  <form (submit)=\"onCreateSubmit()\">\r\n    <!-- \"[(ngModel)]=\" allows for access to data in each of the inputs -->\r\n    <!-- These pertain to the fields set in the \"create.component.ts\" file -->\r\n    <div class=\"form-group\">\r\n      <label>Title</label>\r\n      <input type=\"text\" [(ngModel)]=\"title\" name=\"title\" class=\"form-control\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label>Sport</label>\r\n      <select [(ngModel)]=\"sport\" name=\"sport\" class=\"form-control\" required>\r\n        <option value=\"\" [ngValue]=\"undefined\" disabled selected>---Please select---</option>\r\n        <option value=\"BASEBALL\">Baseball</option>\r\n        <option value=\"BASKETBALL\">Basketball</option>\r\n        <option value=\"FOOTBALL\">Football</option>\r\n        <option value=\"HANDBALL\">Handball</option>\r\n        <option value=\"SOCCER\">Soccer</option>\r\n      </select>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label>Date</label>\r\n      <input id=\"datefield\" type=\"date\" [(ngModel)]=\"date\" name=\"date\" class=\"form-control\"\r\n      placeholder=\"yyyy-MM-dd\" min=\"{{todate | date:'yyyy-MM-dd'}}\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label>Start Time</label>\r\n      <input type=\"time\" [(ngModel)]=\"startTime\" name=\"startTime\" class=\"form-control\"\r\n      placeholder=\"HH:mm:ss\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label>Duration</label>\r\n      <input type=\"number\" [(ngModel)]=\"duration\" name=\"duration\" class=\"form-control\"\r\n      min=\"1\" max=\"8\" placeholder=\"Please enter of the number of hours!\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label>Location</label>\r\n      <input type=\"text\" value=\"addressOf\" placeholder=\"Enter a Location\" name=\"address\" class=\"form-control\"\r\n      autocorrect=\"off\" autocapitalize=\"off\" spellcheck=\"off\" #search [formControl]=\"searchControl\" required >\r\n    </div>\r\n\r\n    <div style=\"display: none;\" class=\"form-group\">\r\n      <label>Latitude</label>\r\n      <input type=\"number\" value=\"latH\" name=\"latitude\" class=\"form-control\" required >\r\n    </div>\r\n\r\n    <div style=\"display: none;\" class=\"form-group\">\r\n      <label>Longitude</label>\r\n      <input type=\"number\" value=\"longH\" name=\"longitude\" class=\"form-control\" required >\r\n    </div>\r\n\r\n    <input type=\"submit\" class=\"btn btn-primary\" value=\"Submit\">\r\n  </form>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -246,9 +278,10 @@ var CreateComponent = /** @class */ (function () {
         this.authService = authService; // For Authorization of the form submission
         // Line below gets today's date
         this.todate = new Date();
-        // Line below is for the hidden latitude and Longitude
+        // Line below is for the hidden latitude and Longitude inputs on the http create form
         this.latH = this.latitude;
         this.longH = this.longitude;
+        this.addressOf = this.address;
     }
     CreateComponent.prototype.ngOnInit = function () {
         // Code below is for the Angular-Google Places API
@@ -271,12 +304,29 @@ var CreateComponent = /** @class */ (function () {
                     // Set latitude and longitude
                     _this.latitude = place.geometry.location.lat();
                     _this.longitude = place.geometry.location.lng();
+                    // Reverse Geocoding variables
+                    var geocoder = new google.maps.Geocoder();
+                    var latlng = new google.maps.LatLng(_this.latitude, _this.longitude);
+                    var request = { address: "", latLng: latlng };
+                    // Reverse Geocoding code to get back address
+                    geocoder.geocode(request, function (results, status) {
+                        if (status == google.maps.GeocoderStatus.OK) {
+                            if (results[0] != null) {
+                                _this.ngZone.run(function () { _this.address = String(results[0].formatted_address); });
+                                console.log(_this.address);
+                            }
+                            else {
+                                _this.alertService.danger("No address available");
+                            }
+                        }
+                    });
                 });
             });
         });
     };
     CreateComponent.prototype.onCreateSubmit = function () {
         var _this = this;
+        // Code below logs to output all the values entered by the user
         console.log(this.title);
         console.log(this.sport);
         console.log(this.date);
@@ -284,6 +334,8 @@ var CreateComponent = /** @class */ (function () {
         console.log(this.startTime);
         console.log(this.latitude);
         console.log(this.longitude);
+        console.log(this.address);
+        // Code belowe creates the game class using the values entered by the user
         var game = {
             title: this.title,
             sport: this.sport,
@@ -291,14 +343,15 @@ var CreateComponent = /** @class */ (function () {
             duration: this.duration,
             startTime: this.startTime,
             latitude: this.latitude,
-            longitude: this.longitude
+            longitude: this.longitude,
+            address: this.address
         };
         // Code below checks that all the required fields are filled
         if (!this.validateService.validateCreate(game)) {
             this.alertService.danger("Please fill in ALL Fields!");
             return false;
         }
-        // Create Game
+        // Create Game - Call the createGame function localted in auth.service.ts
         this.authService.createGame(game).subscribe(function (data) {
             if (data.success) {
                 _this.alertService.success("You have successfully created a new Game!");
@@ -323,7 +376,7 @@ var CreateComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_validate_service__["a" /* ValidateService */],
             __WEBPACK_IMPORTED_MODULE_3_ngx_alerts__["b" /* AlertService */],
             __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */],
-            __WEBPACK_IMPORTED_MODULE_6__agm_core__["b" /* MapsAPILoader */],
+            __WEBPACK_IMPORTED_MODULE_6__agm_core__["MapsAPILoader"],
             __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"],
             __WEBPACK_IMPORTED_MODULE_2__services_auth_service__["a" /* AuthService */] // For Authorization of the form submission
         ])
@@ -760,14 +813,14 @@ var RegisterComponent = /** @class */ (function () {
 /***/ "./src/app/components/result/result.component.css":
 /***/ (function(module, exports) {
 
-module.exports = "/* Below is the style for the Google Maps */\r\nagm-map {\r\n  height: 300px;\r\n}\r\n"
+module.exports = "/* Below is the style for the Google Maps */\r\n\r\nagm-map{\r\n  height: 300px;\r\n}\r\n\r\n/* .map-container{\r\n  margin: auto;\r\n  width: 100%;\r\n}\r\n\r\nagm-map {\r\n    float: left;\r\n    height: 300px;\r\n    width: 50%;\r\n    margin-right: 0;\r\n}\r\n\r\n#directions-panel {\r\n    float: left;\r\n    height: 300px;\r\n    width: 50%;\r\n    margin-left: 0;\r\n    overflow: scroll;\r\n} */\r\n\r\n.query-thread {\r\n  border: 4px dotted orange;\r\n}\r\n"
 
 /***/ }),
 
 /***/ "./src/app/components/result/result.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n\n  <h1>{{ title }}</h1>\n\n  <!-- this creates a google map on the page with the given lat/lng from -->\n  <!-- the component as the initial center of the map: ../../../../../images/sports_icons/baseball.png-->\n  <div class=\"form-group\">\n    <input placeholder=\"search for location\" autocorrect=\"off\" autocapitalize=\"off\" spellcheck=\"off\" type=\"text\" class=\"form-control\" #search [formControl]=\"searchControl\">\n  </div>\n  <agm-map [latitude]=\"latitude\" [longitude]=\"longitude\" [scrollwheel]=\"false\" [zoom]=\"zoom\">\n    <agm-marker [iconUrl]=\"icon\" [latitude]=\"latitude\" [longitude]=\"longitude\" ></agm-marker>\n    <agm-marker [iconUrl]=\"icon1\" [latitude]=\"latitude1\" [longitude]=\"longitude1\" ></agm-marker>\n  </agm-map>\n\n  <div *ngIf=\"!userLocation\" class=\"\">\n    <p>NOOOO</p>\n  </div>\n\n\n\n</div>\n"
+module.exports = "<div class=\"container-fluid\">\r\n\r\n  <h1>{{ title }}</h1>\r\n\r\n  <!-- this creates a google map on the page with the given lat/lng from -->\r\n  <!-- the component as the initial center of the map: ../../../../../images/sports_icons/baseball.png-->\r\n  <div class=\"form-group\">\r\n    <input placeholder=\"search for location\" autocorrect=\"off\" autocapitalize=\"off\" spellcheck=\"off\" type=\"text\" class=\"form-control\" #search [formControl]=\"searchControl\">\r\n  </div>\r\n\r\n  <div class=\"map-container\">\r\n    <agm-map [latitude]=\"latitude\" [longitude]=\"longitude\" [scrollwheel]=\"true\" [zoom]=\"zoom\">\r\n      <agm-direction *ngIf=\"dir\" [origin]=\"dir.origin\" [destination]=\"dir.destination\" [panel]=\"myPanel\"></agm-direction>\r\n\r\n      <agm-marker [iconUrl]=\"icon\" [latitude]=\"latitude\" [longitude]=\"longitude\" ></agm-marker>\r\n      <agm-marker *ngFor=\"let game of games\" [ngSwitch]=\"game.sport\" >\r\n        <agm-marker *ngSwitchCase = \"BASKETBALL\" [iconUrl]=\"basketballIcon\" [latitude]=\"game.latitude\" [longitude]=\"game.longitude\" ></agm-marker>\r\n        <agm-marker *ngSwitchCase = \"BASEBALL\" [iconUrl]=\"baseballIcon\" [latitude]=\"game.latitude\" [longitude]=\"game.longitude\" ></agm-marker>\r\n        <agm-marker *ngSwitchCase = \"FOOTBALL\" [iconUrl]=\"footballIcon\" [latitude]=\"game.latitude\" [longitude]=\"game.longitude\" ></agm-marker>\r\n        <agm-marker *ngSwitchCase = \"HANDBALL\" [iconUrl]=\"handballIcon\" [latitude]=\"game.latitude\" [longitude]=\"game.longitude\" ></agm-marker>\r\n        <agm-marker *ngSwitchCase = \"SOCCER\" [iconUrl]=\"soccerIcon\" [latitude]=\"game.latitude\" [longitude]=\"game.longitude\" ></agm-marker>\r\n      </agm-marker>\r\n    </agm-map>\r\n\r\n    <div id=\"directions-panel\" #myPanel></div>\r\n  </div>\r\n\r\n  <div *ngFor=\"let game of games; let i = index\"  class=\"query-thread\">\r\n    <div style=\"display: none;\">\r\n      {{isDisabled.push(false)}}\r\n    </div>\r\n    <ul>\r\n      <li>Title: {{game.title}}</li>\r\n      <li>Sport: {{game.sport}}</li>\r\n      <li>Game Owner: {{game.owner}}</li>\r\n      <li>Number of Player: {{game.playernum}}</li>\r\n      <li>Date & Time: {{game.startDateTime | date: format}}</li>\r\n      <li>Duration: {{game.duration}} hours</li>\r\n      <li>Address: {{game.address}} </li>\r\n      <li>Truth: {{isDisabled[i]}} </li>\r\n      <li>{{isDisabled.length}}</li>\r\n      <li>{{games.length}}</li>\r\n      <li><button class=\"btn btn-secondary\" type=\"button\" (click)=\"onDirectionsClick(game.latitude, game.longitude)\">Get Directions</button></li>\r\n      <li><button class=\"btn btn-secondary\" type=\"button\" [disabled]=\"isDisabled[i]\" (click)=\"onJoinClick(game._id, i)\">JOIN</button></li>\r\n    </ul>\r\n  </div>\r\n\r\n  <!-- Since size of isDisabled array increases dynamically, code below limits the size! -->\r\n  <div style=\"display: none;\" *ngIf=\"isDisabled.length > 2*games.length\" style=\"display: none;\">\r\n    {{isDisabled.splice(isDisabled.length*(1/2), isDisabled.length*(1/2), false)}}\r\n  </div>\r\n\r\n\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -810,28 +863,68 @@ var ResultComponent = /** @class */ (function () {
         this.ngZone = ngZone;
     }
     ResultComponent.prototype.ngOnInit = function () {
-        var _this = this;
         // Code below retrieves items from local storage and parses them back to
         // their orignal types
+        var _this = this;
         // NOTE: In order to find the values of and info about "games" and "userLocation,"
         // go to the search page and run a query
-        // JSON.parse(localStorage.getItem("games")); JSON.parse(localStorage.getItem("userLocation"));
         this.authService.getResult().subscribe(function (results) {
-            _this.games = results.games;
-            _this.userLocation = results.userLocation;
+            _this.games = JSON.parse(localStorage.getItem("games"));
+            _this.userLocation = JSON.parse(localStorage.getItem("userLocation"));
+            console.log(_this.userLocation);
+            //If, the user's location has successfully been retrieved, set google maps defaults
+            if (localStorage.userLocation) {
+                _this.zoom = 12;
+                _this.latitude = _this.userLocation.lat;
+                _this.longitude = _this.userLocation.long;
+                _this.icon = "https://maps.google.com/mapfiles/kml/paddle/blu-circle.png";
+                _this.dir = undefined;
+            }
         }, function (err) {
             console.log(err);
             return false;
         });
-        //set google maps defaults
-        this.zoom = 4;
-        this.latitude = 40;
-        this.longitude = -73;
-        this.icon = "https://maps.google.com/mapfiles/kml/paddle/blu-circle.png";
-        this.latitude1 = 34.8282;
-        this.longitude1 = -96.5795;
-        this.icon1 = {
+        // The STRING values for the sports_icons
+        this.BASEBALL = "BASEBALL";
+        this.BASKETBALL = "BASKETBALL";
+        this.FOOTBALL = "FOOTBALL";
+        this.HANDBALL = "HANDBALL";
+        this.SOCCER = "SOCCER";
+        // Handles the format through which the Date and time are displayed
+        this.format = "EEEE - MMM dd, yyyy - hh:mm a";
+        // Line below initializes the array called "isDisabled"
+        this.isDisabled = [];
+        // The URL for the sports_icons
+        this.baseballIcon = {
             url: __webpack_require__("../images/sports_icons/baseball.png"),
+            scaledSize: {
+                height: 30,
+                width: 30
+            }
+        };
+        this.basketballIcon = {
+            url: __webpack_require__("../images/sports_icons/basketbal.png"),
+            scaledSize: {
+                height: 30,
+                width: 30
+            }
+        };
+        this.footballIcon = {
+            url: __webpack_require__("../images/sports_icons/usfootball.png"),
+            scaledSize: {
+                height: 30,
+                width: 30
+            }
+        };
+        this.soccerIcon = {
+            url: __webpack_require__("../images/sports_icons/soccer.png"),
+            scaledSize: {
+                height: 30,
+                width: 30
+            }
+        };
+        this.handballIcon = {
+            url: __webpack_require__("../images/sports_icons/handball.png"),
             scaledSize: {
                 height: 30,
                 width: 30
@@ -862,6 +955,29 @@ var ResultComponent = /** @class */ (function () {
             });
         });
     };
+    ResultComponent.prototype.onDirectionsClick = function (gameLat, gameLong) {
+        // This function reacts to the user clicking the get directions button
+        this.dir = {
+            origin: { lat: this.latitude, lng: this.longitude },
+            destination: { lat: gameLat, lng: gameLong },
+            options: { suppressMarkers: true }
+        };
+    };
+    ResultComponent.prototype.onJoinClick = function (gameID, index) {
+        // This function reacts to the user clicking to join the games
+        this.user = JSON.parse(localStorage.getItem("user"));
+        this.isDisabled[index] = true;
+        // addPlayer - Code below calls the addPlayer function localted in auth.service.ts
+        // this.authService.addPlayer(gameID, this.user.username).subscribe(data => {
+        //   if (data.success) {
+        //     this.alertService.success("You have successfully joined the Game!");
+        //     this.isDisabled[index] = true;
+        //   } else {
+        //     this.alertService.danger("Sorry, you could not be added to the Game!");
+        //     this.alertService.danger(data.msg);
+        //   }
+        // });
+    };
     ResultComponent.prototype.setCurrentPosition = function () {
         var _this = this;
         if ("geolocation" in navigator) {
@@ -885,12 +1001,15 @@ var ResultComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ngx_alerts__["b" /* AlertService */],
             __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */],
             __WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */],
-            __WEBPACK_IMPORTED_MODULE_5__agm_core__["b" /* MapsAPILoader */],
+            __WEBPACK_IMPORTED_MODULE_5__agm_core__["MapsAPILoader"],
             __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"]])
     ], ResultComponent);
     return ResultComponent;
 }());
 
+this.toString = function (date) {
+    this.tempString = "What Waht";
+};
 
 
 /***/ }),
@@ -905,7 +1024,7 @@ module.exports = "\r\n"
 /***/ "./src/app/components/search/search.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\r\n  <h2 class=\"page-header\">Search for A Game</h2>\r\n\r\n  <form (submit)=\"onSearchSubmit()\">\r\n\r\n    <div class=\"form-group\">\r\n      <label>Sport</label>\r\n      <select [(ngModel)]=\"sport\" name=\"sport\" class=\"form-control\" required>\r\n        <option value=\"\" [ngValue]=\"undefined\" disabled selected>---Please select---</option>\r\n        <option value=\"BASEBALL\">Baseball</option>\r\n        <option value=\"BASKETBALL\">Basketball</option>\r\n        <option value=\"FOOTBALL\">Football</option>\r\n        <option value=\"HANDBALL\">Handball</option>\r\n        <option value=\"SOCCER\">Soccer</option>\r\n      </select>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label>Date</label>\r\n      <input id=\"datefield\" type=\"date\" [(ngModel)]=\"date\" name=\"date\" class=\"form-control\"\r\n      placeholder=\"yyyy-MM-dd\" min=\"{{todate | date:'yyyy-MM-dd'}}\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label>Location</label>\r\n      <input type=\"text\" placeholder=\"Enter the location from which you will travel!\" name=\"location\" class=\"form-control\"\r\n      autocorrect=\"off\" autocapitalize=\"off\" spellcheck=\"off\" #search [formControl]=\"searchControl\" required >\r\n    </div>\r\n\r\n    <div style=\"display: none;\" class=\"form-group\">\r\n      <label>Latitude</label>\r\n      <input type=\"number\" value=\"latH\" name=\"latitude\" class=\"form-control\" required >\r\n    </div>\r\n\r\n    <div style=\"display: none;\" class=\"form-group\">\r\n      <label>Longitude</label>\r\n      <input type=\"number\" value=\"longH\" name=\"longitude\" class=\"form-control\" required >\r\n    </div>\r\n\r\n    <input type=\"submit\" class=\"btn btn-primary\" value=\"Submit\">\r\n\r\n  </form>\r\n\r\n</div>\r\n"
+module.exports = "<div class=\"container-fluid\">\r\n  <h2 class=\"page-header\">Search for A Game</h2>\r\n\r\n  <form (submit)=\"onSearchSubmit()\">\r\n\r\n    <div class=\"form-group\">\r\n      <label>Sport</label>\r\n      <select [(ngModel)]=\"sport\" name=\"sport\" class=\"form-control\" required>\r\n        <option value=\"\" [ngValue]=\"undefined\" disabled selected>---Please select---</option>\r\n        <option value=\"BASEBALL\">Baseball</option>\r\n        <option value=\"BASKETBALL\">Basketball</option>\r\n        <option value=\"FOOTBALL\">Football</option>\r\n        <option value=\"HANDBALL\">Handball</option>\r\n        <option value=\"SOCCER\">Soccer</option>\r\n      </select>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label>Date</label>\r\n      <input id=\"datefield\" type=\"date\" [(ngModel)]=\"date\" name=\"date\" class=\"form-control\"\r\n      placeholder=\"yyyy-MM-dd\" min=\"{{todate | date:'yyyy-MM-dd'}}\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label>Location</label>\r\n      <input type=\"text\" placeholder=\"Enter the location from which you will travel!\" name=\"location\" class=\"form-control\"\r\n      autocorrect=\"off\" autocapitalize=\"off\" spellcheck=\"off\" #search [formControl]=\"searchControl\" required >\r\n    </div>\r\n\r\n    <div style=\"display: none;\" class=\"form-group\">\r\n      <label>Latitude</label>\r\n      <input type=\"number\" value=\"latH\" name=\"latitude\" class=\"form-control\" required >\r\n    </div>\r\n\r\n    <div style=\"display: none;\" class=\"form-group\">\r\n      <label>Longitude</label>\r\n      <input type=\"number\" value=\"longH\" name=\"longitude\" class=\"form-control\" required >\r\n    </div>\r\n\r\n    <input type=\"submit\" class=\"btn btn-primary\" value=\"Submit\">\r\n\r\n  </form>\r\n\r\n  <p></p>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -993,6 +1112,8 @@ var SearchComponent = /** @class */ (function () {
         };
         // Calls the backend authentication function for Search Functionality
         this.authService.authenticateSearch(query).subscribe(function (data) {
+            console.log("WHATTTTT?");
+            console.log(data);
             if (data.success) {
                 _this.authService.storeGameData(data.results.games);
                 _this.authService.storeUserLocation(data.results.userLocation);
@@ -1019,7 +1140,7 @@ var SearchComponent = /** @class */ (function () {
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ngx_alerts__["b" /* AlertService */],
             __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */],
-            __WEBPACK_IMPORTED_MODULE_5__agm_core__["b" /* MapsAPILoader */],
+            __WEBPACK_IMPORTED_MODULE_5__agm_core__["MapsAPILoader"],
             __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"],
             __WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */] // For Authorization of the form submission
         ])
@@ -1155,6 +1276,13 @@ var AuthService = /** @class */ (function () {
         headers.append('Authorization', this.authToken);
         headers.append('Content-Type', 'application/json');
         return this.http.post('http://localhost:5000/games/create', game, { headers: headers }).map(function (res) { return res.json(); });
+    };
+    AuthService.prototype.addPlayer = function (gameID, username) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["Headers"]();
+        this.loadToken();
+        headers.append('Authorization', this.authToken);
+        headers.append('Content-Type', 'application/json');
+        return this.http.post('http://localhost:5000/games/add/' + gameID + "/" + username, { headers: headers }).map(function (res) { return res.json(); });
     };
     // Function below reaches into our backend API and makes the post request to search
     AuthService.prototype.authenticateSearch = function (results) {

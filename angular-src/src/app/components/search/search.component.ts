@@ -20,6 +20,7 @@ export class SearchComponent implements OnInit {
   date: Date;
   latitude: Number;
   longitude: Number;
+  games: Array<object>;
 
   public searchControl: FormControl; // For the Places-Autocomplete
 
@@ -85,6 +86,8 @@ export class SearchComponent implements OnInit {
 
     // Calls the backend authentication function for Search Functionality
     this.authService.authenticateSearch(query).subscribe(data => {
+      console.log("WHATTTTT?");
+      console.log(data);
       if (data.success) {
         this.authService.storeGameData(data.results.games);
         this.authService.storeUserLocation(data.results.userLocation);

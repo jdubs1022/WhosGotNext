@@ -50,9 +50,15 @@ const GameSchema = new Schema({
     required: true
   },
 
-  dateTime: {
+  startDateTime: {
     type: Date,
     required: true
+  },
+
+  endDateTime: {
+    type: Date,
+    required: true,
+    expires: "1m" //This line should handle the expiration of each object
   },
 
   latitude: {
@@ -65,6 +71,12 @@ const GameSchema = new Schema({
     type: Number,
     required: true,
     defaul: 0
+  },
+
+  address: {
+    type: String,
+    default: "",
+    required: true
   }
 
 });
@@ -78,36 +90,36 @@ const Game = module.exports = mongoose.model('Game', GameSchema);
 module.exports.getGameByID = function(id, callback) {
   // Finds a specific game by its ID
   Game.findById(id, callback);
-}
+};
 
 module.exports.getGameByTitle = function(title, callback) {
   // Finds a specific game by its title
   const query = {title: title};
   Game.findOne(query, callback);
-}
+};
 
 module.exports.getGameByDate = function(date, callback) {
   // Finds all games with the passed-in date
   const query = {date: date};
   Game.find(query).exec(callback);
-}
+};
 
 module.exports.getGameBySport = function(sport, callback) {
   // Find all games with the passed-in sport
   const query = {sport: sport};
   Game.find(query).exec(callback);
-}
+};
 
 module.exports.getGameBySportAndDate = function(sport, date, callback) {
   // Find all games with the passed-in sport and date
   const query = {sport: sport, date: date};
   Game.find(query).exec(callback);
-}
+};
 
 module.exports.addGame = function(newGame, callback) {
   // Adds a new game to the Game collection of the connected database
   newGame.save(callback);
-}
+};
 
 module.exports.addPlayerToGame = function(gameID, newPlayer, callback) {
   // Add a new player to the passed-in game
@@ -115,19 +127,28 @@ module.exports.addPlayerToGame = function(gameID, newPlayer, callback) {
   // newPlayer - the username of the new player being added
   const query = {_id: gameID};
   const update = {$push: {players: { $each: [newPlayer], $sort: 1}}};
-  Game.findOneAndUpdate(query, update, callback);
-}
+  const wantNew = {new: true}; // Tells function below to return the updated document
+  Game.findOneAndUpdate(query, update, wantNew, callback);
+};
 
 module.exports.incrementPlayerNum = function(gameID, callback) {
   // Increment the playernum of the passed-in games
   const query = {_id: gameID};
   const update = {$inc: {playernum: 1}};
-  Game.findOneAndUpdate(query, update, callback);
-}
+  const wantNew = {new: true}; // Tells function below to return the updated document
+  Game.findOneAndUpdate(query, update, wantNew, callback);
+};
 
 module.exports.changeLatandLong = function(newLat, newLong, callback) {
   // Update the values for latitude and longitude
   const query = {_id: gameID};
   const update = {$set: {latitude: newLat, longitude: newLong}};
-  Game.findOneAndUpdate(query, update, callback);
-}
+  const wantNew = {new: true}; // Tells function below to return the updated document
+  Game.findOneAndUpdate(query, update, wantNew, callback);
+};
+
+module.exports.deleteAllGames = function( callback ) {
+  // Delete all the game entries from the database
+  const query = {};
+  Game.remove({}, callback);
+};

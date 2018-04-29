@@ -1,4 +1,29 @@
 /* Below is the style for the Google Maps */
-agm-map {
+
+agm-map{
   height: 300px;
+}
+
+/* .map-container{
+  margin: auto;
+  width: 100%;
+}
+
+agm-map {
+    float: left;
+    height: 300px;
+    width: 50%;
+    margin-right: 0;
+}
+
+#directions-panel {
+    float: left;
+    height: 300px;
+    width: 50%;
+    margin-left: 0;
+    overflow: scroll;
+} */
+
+.query-thread {
+  border: 4px dotted orange;
 }

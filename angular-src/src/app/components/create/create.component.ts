@@ -20,10 +20,11 @@ export class CreateComponent implements OnInit {
   title: String;
   sport: String;
   date: Date;
-  duration: Number;
+  duration: number;
   startTime: String;
-  latitude: Number;
-  longitude: Number;
+  latitude: number;
+  longitude: number;
+  address: String;
 
   public searchControl: FormControl; // For the Places-Autocomplete
 
@@ -68,6 +69,23 @@ export class CreateComponent implements OnInit {
           // Set latitude and longitude
           this.latitude = place.geometry.location.lat();
           this.longitude = place.geometry.location.lng();
+
+          // Reverse Geocoding variables
+          let geocoder = new google.maps.Geocoder();
+          let latlng = new google.maps.LatLng(this.latitude, this.longitude);
+          let request = {  address: "", latLng: latlng  };
+
+          // Reverse Geocoding code to get back address
+          geocoder.geocode(request, (results, status) => {
+            if (status == google.maps.GeocoderStatus.OK) {
+              if (results[0] != null) {
+                this.ngZone.run(() => { this.address = String(results[0].formatted_address); });
+                console.log(this.address);
+              } else {
+                this.alertService.danger("No address available");
+              }
+            }
+          });
         });
       });
     });
@@ -76,6 +94,7 @@ export class CreateComponent implements OnInit {
 
   onCreateSubmit(){
 
+    // Code below logs to output all the values entered by the user
     console.log(this.title);
     console.log(this.sport);
     console.log(this.date);
@@ -83,7 +102,9 @@ export class CreateComponent implements OnInit {
     console.log(this.startTime);
     console.log(this.latitude);
     console.log(this.longitude);
+    console.log(this.address);
 
+    // Code belowe creates the game class using the values entered by the user
     const game = {
       title: this.title,
       sport: this.sport,
@@ -91,7 +112,8 @@ export class CreateComponent implements OnInit {
       duration: this.duration,
       startTime: this.startTime,
       latitude: this.latitude,
-      longitude: this.longitude
+      longitude: this.longitude,
+      address: this.address
     }
 
     // Code below checks that all the required fields are filled
@@ -100,7 +122,7 @@ export class CreateComponent implements OnInit {
       return false;
     }
 
-    // Create Game
+    // Create Game - Call the createGame function localted in auth.service.ts
     this.authService.createGame(game).subscribe(data => {
       if (data.success) {
         this.alertService.success("You have successfully created a new Game!");
@@ -116,7 +138,9 @@ export class CreateComponent implements OnInit {
   // Line below gets today's date
   private todate = new Date();
 
-  // Line below is for the hidden latitude and Longitude
+  // Line below is for the hidden latitude and Longitude inputs on the http create form
   private latH = this.latitude;
   private longH = this.longitude;
+
+  private addressOf = this.address;
 }

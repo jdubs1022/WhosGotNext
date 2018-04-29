@@ -70,6 +70,14 @@ export class AuthService {
     return this.http.post('http://localhost:5000/games/create', game, {headers: headers}).map(res => res.json());
   }
 
+  addPlayer( gameID, username ){
+    let headers = new Headers();
+    this.loadToken();
+    headers.append('Authorization', this.authToken);
+    headers.append('Content-Type','application/json');
+    return this.http.post('http://localhost:5000/games/add/' + gameID + "/" + username, {headers: headers}).map(res => res.json());
+  }
+
   // Function below reaches into our backend API and makes the post request to search
   authenticateSearch( results ){
     let headers = new Headers();

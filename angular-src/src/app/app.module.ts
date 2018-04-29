@@ -7,6 +7,8 @@ import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 import { GooglePlaceModule } from "ngx-google-places-autocomplete"; // Import Google-Places Module
 import { AgmCoreModule } from '@agm/core'; // Import Angular-Google Maps
+import { AgmDirectionModule } from 'agm-direction';  // Import Angular-Google-Maps Directions Moudle
+
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -68,7 +70,8 @@ const appRoutes: Routes = [
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBqqOtWm-TTatvNnl585mt0V4dN0txIi0M',
       libraries: ["places"]
-    })
+    }),
+    AgmDirectionModule
 
   ],
   providers: [ValidateService, AuthService, AuthGuard],

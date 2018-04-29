@@ -7,13 +7,47 @@
   <div class="form-group">
     <input placeholder="search for location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="form-control" #search [formControl]="searchControl">
   </div>
-  <agm-map [latitude]="latitude" [longitude]="longitude" [scrollwheel]="false" [zoom]="zoom">
-    <agm-marker [iconUrl]="icon" [latitude]="latitude" [longitude]="longitude" ></agm-marker>
-    <agm-marker [iconUrl]="icon1" [latitude]="latitude1" [longitude]="longitude1" ></agm-marker>
-  </agm-map>
 
-  <div *ngIf="!userLocation" class="">
-    <p>NOOOO</p>
+  <div class="map-container">
+    <agm-map [latitude]="latitude" [longitude]="longitude" [scrollwheel]="true" [zoom]="zoom">
+      <agm-direction *ngIf="dir" [origin]="dir.origin" [destination]="dir.destination" [panel]="myPanel"></agm-direction>
+
+      <agm-marker [iconUrl]="icon" [latitude]="latitude" [longitude]="longitude" ></agm-marker>
+      <agm-marker *ngFor="let game of games" [ngSwitch]="game.sport" >
+        <agm-marker *ngSwitchCase = "BASKETBALL" [iconUrl]="basketballIcon" [latitude]="game.latitude" [longitude]="game.longitude" ></agm-marker>
+        <agm-marker *ngSwitchCase = "BASEBALL" [iconUrl]="baseballIcon" [latitude]="game.latitude" [longitude]="game.longitude" ></agm-marker>
+        <agm-marker *ngSwitchCase = "FOOTBALL" [iconUrl]="footballIcon" [latitude]="game.latitude" [longitude]="game.longitude" ></agm-marker>
+        <agm-marker *ngSwitchCase = "HANDBALL" [iconUrl]="handballIcon" [latitude]="game.latitude" [longitude]="game.longitude" ></agm-marker>
+        <agm-marker *ngSwitchCase = "SOCCER" [iconUrl]="soccerIcon" [latitude]="game.latitude" [longitude]="game.longitude" ></agm-marker>
+      </agm-marker>
+    </agm-map>
+
+    <div id="directions-panel" #myPanel></div>
+  </div>
+
+  <div *ngFor="let game of games; let i = index"  class="query-thread">
+    <div style="display: none;">
+      {{isDisabled.push(false)}}
+    </div>
+    <ul>
+      <li>Title: {{game.title}}</li>
+      <li>Sport: {{game.sport}}</li>
+      <li>Game Owner: {{game.owner}}</li>
+      <li>Number of Player: {{game.playernum}}</li>
+      <li>Date & Time: {{game.startDateTime | date: format}}</li>
+      <li>Duration: {{game.duration}} hours</li>
+      <li>Address: {{game.address}} </li>
+      <li>Truth: {{isDisabled[i]}} </li>
+      <li>{{isDisabled.length}}</li>
+      <li>{{games.length}}</li>
+      <li><button class="btn btn-secondary" type="button" (click)="onDirectionsClick(game.latitude, game.longitude)">Get Directions</button></li>
+      <li><button class="btn btn-secondary" type="button" [disabled]="isDisabled[i]" (click)="onJoinClick(game._id, i)">JOIN</button></li>
+    </ul>
+  </div>
+
+  <!-- Since size of isDisabled array increases dynamically, code below limits the size! -->
+  <div style="display: none;" *ngIf="isDisabled.length > 2*games.length" style="display: none;">
+    {{isDisabled.splice(isDisabled.length*(1/2), isDisabled.length*(1/2), false)}}
   </div>
 
 
