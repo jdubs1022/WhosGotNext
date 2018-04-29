@@ -33,6 +33,7 @@ export class ResultComponent implements OnInit {
   public tempString: String;
 
   public isDisabled: Array<boolean>;
+  public numbers: Array<number>;
 
   // The object definitions for the sports_icons
   public basketballIcon: Object;
@@ -99,6 +100,7 @@ export class ResultComponent implements OnInit {
 
       // Line below initializes the array called "isDisabled"
       this.isDisabled = [];
+      this.numbers = [];
 
       // The URL for the sports_icons
       this.baseballIcon = {
@@ -189,6 +191,8 @@ export class ResultComponent implements OnInit {
 
       this.user = JSON.parse(localStorage.getItem("user"));
       this.isDisabled[index] = true;
+      this.alertService.success("You have successfully joined the Game!");
+      ++this.numbers[index];
 
       // addPlayer - Code below calls the addPlayer function localted in auth.service.ts
       // this.authService.addPlayer(gameID, this.user.username).subscribe(data => {

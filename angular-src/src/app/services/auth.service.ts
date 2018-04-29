@@ -1,7 +1,7 @@
 // The ts file makes all the requests to our backend api
 
 import { Injectable } from '@angular/core';
-import { Http, Headers } from '@angular/http';
+import { Http, Headers, URLSearchParams, RequestOptions } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { tokenNotExpired } from 'angular2-jwt';
 
@@ -12,7 +12,7 @@ export class AuthService {
   games: any;
   userLocation: any;
 
-  constructor(private http: Http) { }
+  constructor( private http: Http ) { }
 
   // Function below reaches into our backend API and makes the post request to register
   registerUser(user){
@@ -66,7 +66,7 @@ export class AuthService {
     let headers = new Headers();
     this.loadToken();
     headers.append('Authorization', this.authToken);
-    headers.append('Content-Type','application/json');
+    headers.append('Content-Type', 'application/json');
     return this.http.post('http://localhost:5000/games/create', game, {headers: headers}).map(res => res.json());
   }
 
@@ -74,8 +74,15 @@ export class AuthService {
     let headers = new Headers();
     this.loadToken();
     headers.append('Authorization', this.authToken);
-    headers.append('Content-Type','application/json');
-    return this.http.post('http://localhost:5000/games/add/' + gameID + "/" + username, {headers: headers}).map(res => res.json());
+    headers.append('Content-Type', 'application/json');
+
+    // Set the query parameters
+    let params = new URLSearchParams();
+    params.append("gameID", gameID);
+    params.append("username", username);
+    let options = new RequestOptions({headers: headers, params: params});
+
+    return this.http.put('http://localhost:5000/games/add', {headers: headers}).map(res => res.json());
   }
 
   // Function below reaches into our backend API and makes the post request to search
@@ -83,7 +90,7 @@ export class AuthService {
     let headers = new Headers();
     this.loadToken();
     headers.append('Authorization', this.authToken);
-    headers.append('Content-Type','application/json');
+    headers.append('Content-Type', 'application/json');
     return this.http.post('http://localhost:5000/games/search', results, {headers: headers}).map(res => res.json());
   }
 
@@ -105,7 +112,7 @@ export class AuthService {
     let headers = new Headers();
     this.loadToken();
     headers.append('Authorization', this.authToken);
-    headers.append('Content-Type','application/json');
+    headers.append('Content-Type', 'application/json');
     return this.http.get('http://localhost:5000/games/result', {headers: headers}).map(res => res.json());
   }
 

@@ -190,7 +190,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_15__components_profile_profile_component__["a" /* ProfileComponent */],
                 __WEBPACK_IMPORTED_MODULE_21__components_create_create_component__["a" /* CreateComponent */],
                 __WEBPACK_IMPORTED_MODULE_22__components_search_search_component__["a" /* SearchComponent */],
-                __WEBPACK_IMPORTED_MODULE_23__components_result_result_component__["a" /* ResultComponent */]
+                __WEBPACK_IMPORTED_MODULE_23__components_result_result_component__["a" /* ResultComponent */],
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -820,7 +820,7 @@ module.exports = "/* Below is the style for the Google Maps */\r\n\r\nagm-map{\r
 /***/ "./src/app/components/result/result.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\r\n\r\n  <h1>{{ title }}</h1>\r\n\r\n  <!-- this creates a google map on the page with the given lat/lng from -->\r\n  <!-- the component as the initial center of the map: ../../../../../images/sports_icons/baseball.png-->\r\n  <div class=\"form-group\">\r\n    <input placeholder=\"search for location\" autocorrect=\"off\" autocapitalize=\"off\" spellcheck=\"off\" type=\"text\" class=\"form-control\" #search [formControl]=\"searchControl\">\r\n  </div>\r\n\r\n  <div class=\"map-container\">\r\n    <agm-map [latitude]=\"latitude\" [longitude]=\"longitude\" [scrollwheel]=\"true\" [zoom]=\"zoom\">\r\n      <agm-direction *ngIf=\"dir\" [origin]=\"dir.origin\" [destination]=\"dir.destination\" [panel]=\"myPanel\"></agm-direction>\r\n\r\n      <agm-marker [iconUrl]=\"icon\" [latitude]=\"latitude\" [longitude]=\"longitude\" ></agm-marker>\r\n      <agm-marker *ngFor=\"let game of games\" [ngSwitch]=\"game.sport\" >\r\n        <agm-marker *ngSwitchCase = \"BASKETBALL\" [iconUrl]=\"basketballIcon\" [latitude]=\"game.latitude\" [longitude]=\"game.longitude\" ></agm-marker>\r\n        <agm-marker *ngSwitchCase = \"BASEBALL\" [iconUrl]=\"baseballIcon\" [latitude]=\"game.latitude\" [longitude]=\"game.longitude\" ></agm-marker>\r\n        <agm-marker *ngSwitchCase = \"FOOTBALL\" [iconUrl]=\"footballIcon\" [latitude]=\"game.latitude\" [longitude]=\"game.longitude\" ></agm-marker>\r\n        <agm-marker *ngSwitchCase = \"HANDBALL\" [iconUrl]=\"handballIcon\" [latitude]=\"game.latitude\" [longitude]=\"game.longitude\" ></agm-marker>\r\n        <agm-marker *ngSwitchCase = \"SOCCER\" [iconUrl]=\"soccerIcon\" [latitude]=\"game.latitude\" [longitude]=\"game.longitude\" ></agm-marker>\r\n      </agm-marker>\r\n    </agm-map>\r\n\r\n    <div id=\"directions-panel\" #myPanel></div>\r\n  </div>\r\n\r\n  <div *ngFor=\"let game of games; let i = index\"  class=\"query-thread\">\r\n    <div style=\"display: none;\">\r\n      {{isDisabled.push(false)}}\r\n    </div>\r\n    <ul>\r\n      <li>Title: {{game.title}}</li>\r\n      <li>Sport: {{game.sport}}</li>\r\n      <li>Game Owner: {{game.owner}}</li>\r\n      <li>Number of Player: {{game.playernum}}</li>\r\n      <li>Date & Time: {{game.startDateTime | date: format}}</li>\r\n      <li>Duration: {{game.duration}} hours</li>\r\n      <li>Address: {{game.address}} </li>\r\n      <li>Truth: {{isDisabled[i]}} </li>\r\n      <li>{{isDisabled.length}}</li>\r\n      <li>{{games.length}}</li>\r\n      <li><button class=\"btn btn-secondary\" type=\"button\" (click)=\"onDirectionsClick(game.latitude, game.longitude)\">Get Directions</button></li>\r\n      <li><button class=\"btn btn-secondary\" type=\"button\" [disabled]=\"isDisabled[i]\" (click)=\"onJoinClick(game._id, i)\">JOIN</button></li>\r\n    </ul>\r\n  </div>\r\n\r\n  <!-- Since size of isDisabled array increases dynamically, code below limits the size! -->\r\n  <div style=\"display: none;\" *ngIf=\"isDisabled.length > 2*games.length\" style=\"display: none;\">\r\n    {{isDisabled.splice(isDisabled.length*(1/2), isDisabled.length*(1/2), false)}}\r\n  </div>\r\n\r\n\r\n\r\n</div>\r\n"
+module.exports = "<div class=\"container-fluid\">\r\n\r\n  <h1>{{ title }}</h1>\r\n\r\n  <!-- this creates a google map on the page with the given lat/lng from -->\r\n  <!-- the component as the initial center of the map: ../../../../../images/sports_icons/baseball.png-->\r\n  <div class=\"form-group\">\r\n    <input placeholder=\"search for location\" autocorrect=\"off\" autocapitalize=\"off\" spellcheck=\"off\" type=\"text\" class=\"form-control\" #search [formControl]=\"searchControl\">\r\n  </div>\r\n\r\n  <div class=\"map-container\">\r\n    <agm-map [latitude]=\"latitude\" [longitude]=\"longitude\" [scrollwheel]=\"true\" [zoom]=\"zoom\">\r\n      <agm-direction *ngIf=\"dir\" [origin]=\"dir.origin\" [destination]=\"dir.destination\" [panel]=\"myPanel\" [renderOptions]=\"dir.options\"></agm-direction>\r\n\r\n      <agm-marker [iconUrl]=\"icon\" [latitude]=\"latitude\" [longitude]=\"longitude\" ></agm-marker>\r\n      <agm-marker *ngFor=\"let game of games\" [ngSwitch]=\"game.sport\" >\r\n        <agm-marker *ngSwitchCase = \"BASKETBALL\" [iconUrl]=\"basketballIcon\" [latitude]=\"game.latitude\" [longitude]=\"game.longitude\" ></agm-marker>\r\n        <agm-marker *ngSwitchCase = \"BASEBALL\" [iconUrl]=\"baseballIcon\" [latitude]=\"game.latitude\" [longitude]=\"game.longitude\" ></agm-marker>\r\n        <agm-marker *ngSwitchCase = \"FOOTBALL\" [iconUrl]=\"footballIcon\" [latitude]=\"game.latitude\" [longitude]=\"game.longitude\" ></agm-marker>\r\n        <agm-marker *ngSwitchCase = \"HANDBALL\" [iconUrl]=\"handballIcon\" [latitude]=\"game.latitude\" [longitude]=\"game.longitude\" ></agm-marker>\r\n        <agm-marker *ngSwitchCase = \"SOCCER\" [iconUrl]=\"soccerIcon\" [latitude]=\"game.latitude\" [longitude]=\"game.longitude\" ></agm-marker>\r\n      </agm-marker>\r\n    </agm-map>\r\n\r\n    <div id=\"directions-panel\" #myPanel></div>\r\n  </div>\r\n\r\n  <div *ngFor=\"let game of games; let i = index\"  class=\"query-thread\">\r\n    <div style=\"display: none;\">\r\n      {{isDisabled.push(false)}}\r\n      {{numbers.push(1)}}\r\n    </div>\r\n    <ul>\r\n      <li>Title: {{game.title}}</li>\r\n      <li>Sport: {{game.sport}}</li>\r\n      <li>Game Owner: {{game.owner}}</li>\r\n      <li>Number of Player: {{numbers[i]}}</li>\r\n      <li>Date & Time: {{game.startDateTime | date: format}}</li>\r\n      <li>Duration: {{game.duration}} hours</li>\r\n      <li>Address: {{game.address}} </li>\r\n      <li><button class=\"btn btn-secondary\" type=\"button\" (click)=\"onDirectionsClick(game.latitude, game.longitude)\">Get Directions</button> -\r\n          <button class=\"btn btn-secondary\" type=\"button\" [disabled]=\"isDisabled[i]\" (click)=\"onJoinClick(game._id, i)\">JOIN</button>\r\n      </li>\r\n    </ul>\r\n  </div>\r\n\r\n  <!-- Since size of isDisabled array increases dynamically, code below limits the size! -->\r\n  <div style=\"display: none;\" *ngIf=\"isDisabled.length > games.length\" style=\"display: none;\">\r\n    {{isDisabled.splice(games.length, (isDisabled.length - games.length), false)}}\r\n    {{numbers.splice(games.length, (numbers.length - games.length), false)}}\r\n  </div>\r\n\r\n\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -894,6 +894,7 @@ var ResultComponent = /** @class */ (function () {
         this.format = "EEEE - MMM dd, yyyy - hh:mm a";
         // Line below initializes the array called "isDisabled"
         this.isDisabled = [];
+        this.numbers = [];
         // The URL for the sports_icons
         this.baseballIcon = {
             url: __webpack_require__("../images/sports_icons/baseball.png"),
@@ -967,6 +968,8 @@ var ResultComponent = /** @class */ (function () {
         // This function reacts to the user clicking to join the games
         this.user = JSON.parse(localStorage.getItem("user"));
         this.isDisabled[index] = true;
+        this.alertService.success("You have successfully joined the Game!");
+        ++this.numbers[index];
         // addPlayer - Code below calls the addPlayer function localted in auth.service.ts
         // this.authService.addPlayer(gameID, this.user.username).subscribe(data => {
         //   if (data.success) {
@@ -1282,7 +1285,12 @@ var AuthService = /** @class */ (function () {
         this.loadToken();
         headers.append('Authorization', this.authToken);
         headers.append('Content-Type', 'application/json');
-        return this.http.post('http://localhost:5000/games/add/' + gameID + "/" + username, { headers: headers }).map(function (res) { return res.json(); });
+        // Set the query parameters
+        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["URLSearchParams"]();
+        params.append("gameID", gameID);
+        params.append("username", username);
+        var options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["RequestOptions"]({ headers: headers, params: params });
+        return this.http.put('http://localhost:5000/games/add', { headers: headers }).map(function (res) { return res.json(); });
     };
     // Function below reaches into our backend API and makes the post request to search
     AuthService.prototype.authenticateSearch = function (results) {

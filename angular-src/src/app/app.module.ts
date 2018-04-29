@@ -55,7 +55,8 @@ const appRoutes: Routes = [
     ProfileComponent,
     CreateComponent,
     SearchComponent,
-    ResultComponent
+    ResultComponent,
+
   ],
   imports: [
     BrowserModule,

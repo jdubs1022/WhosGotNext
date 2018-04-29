@@ -153,14 +153,19 @@ router.get("/result", passport.authenticate('jwt', {session:false}), function(re
   res.json({games: req.games, userLocation: req.userLocation});
 });
 
+
 // Add new player to the players array of the chosen game /:gameID/:username
 // ?gameID=5ae38b830496db40a8d05947&username=TrayTray
-router.put("/add", passport.authenticate('jwt', {session:false}), function(req, res, next) {
+router.put("/add", function(req, res, next) {
 
   // Declare needed variables
-  let username = "TralTral"; //req.params.username;
-  let gameID = "5ae5144c52e5e403cc4c8c61"; //req.params.gameID;
+  let username = req.params.username;
+  let gameID = req.params.gameID;
   let players = [];
+
+  console.log("HOMEBOY!!!");
+  console.log(res.headers);
+  console.log(req.params.username);
 
   if (!username) {
     return res.json({ success: false, msg: "No username assigned!" });
