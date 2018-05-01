@@ -398,7 +398,7 @@ module.exports = ""
 /***/ "./src/app/components/dashboard/dashboard.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\r\n  <div *ngIf=\"user\">\r\n    <h2 class=\"page-header\">Welcome {{user.name}}</h2>\r\n  </div>\r\n  <a [routerLink]=\"['/create']\"><button class=\"btn btn-success pull-right\">Start a Game!</button></a>\r\n  <a [routerLink]=\"['/search']\"><button class=\"btn btn-success pull-right\">Search for a Game!</button></a>\r\n</div>\r\n"
+module.exports = "<div class=\"container-fluid text-center\">\r\n <div *ngIf=\"user\">\r\n   <br>\r\n   <h2 class=\"page-header\">Welcome {{user.name}}</h2>\r\n   <br>\r\n </div>\r\n <a [routerLink]=\"['/create']\"><button class=\"btn btn-success pull-right\">Start a Game!</button></a>\r\n <a [routerLink]=\"['/search']\"><button class=\"btn btn-success pull-right\">Search for a Game!</button></a>\r\n</div>\r\n"
 
 /***/ }),
 
